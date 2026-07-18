@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #1D3557;
+}
+
+.vertical-box {
+    width: 100%;
+    aspect-ratio: 720 / 343;
+}
+
+#title {
+    background-image: url("media/torshov-image.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction {
+    background-color: #F1FAEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#guide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-item {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-item h3 {
+    width: 150px;
+}
+
+
+
+
+#title h1 {
+    background-color: #1D3557;
+    padding: 3px 12px 5px 12px;
+    color: white;
+    border-radius: 10px;
+}
+
+#title h2 {
+    width: 450px;
+    background-color: #457B9D;
+    padding: 5px 28px 8px 28px;
+    color: white;
+    border-radius: 10px;
+}
+
+#guide-card {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #A8DADC;
+    padding: 23px 13px;
+    border-radius: 10px;
+    box-shadow: 0 6px #1D3557;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+h3, p {
+    font-size: 16px;
+}
