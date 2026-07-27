@@ -1,0 +1,78 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* header */
+
+header {
+    height: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 16px 17px 16px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    align-self: center;
+}
+
+/* post */
+.instagram-post {
+    border-bottom: 10px solid #EDEDED;
+}
+
+/* author info */
+.post-author-info {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.post-author-text-area {
+    margin: auto 7px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.post-author-text-area p {
+    margin: 0;
+    padding: 0;
+}
+
+.address {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* post image */
+.post-img {
+    width: 100%;
+}
+
+/* footer  */
+.footer {
+    padding: 20px;
+}
+
+/* post action btn */
+
+.post-action-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.post-action-icon {
+    width: 22.38px;
+}
+
+.footer span {
+    font-weight: 400;
+}
