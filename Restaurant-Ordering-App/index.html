@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div class="store">
+                    <h1>Jimmy's Diner</h1>
+                    <h2>The best burgers and pizzas in town.</h2>
+                </div>
+            </header>
+
+            <main>
+                <section class="foods" id="foods">
+                </section>
+
+                <section class="order" id="order">
+                </section>
+            </main>
+        </div>
+
+        <div id="modal">
+            <div id="modal-title">
+                <h1>Enter card details</h1>
+            </div>
+            <form id="payment">
+                <input type="text" class="modal-input" id="modal-name" placeholder="Enter your name" required>
+                <input type="text" class="modal-input" id="modal-card" placeholder="Enter card number" required>
+                <input type="text" class="modal-input" id="modal-cvv" placeholder="Enter CVV" required>
+
+                <button type="submit" id="complete-pay" class="green-btn">Pay</button>
+            </form>        
+        </div>
+
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

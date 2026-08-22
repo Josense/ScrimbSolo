@@ -1,0 +1,205 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Smythe";
+    font-weight: 400;
+}
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/** 商店头部信息 */
+.store {
+    padding: 0px 46px;
+    margin: 0;
+    height: 167px;
+    background-image: url('./images/home-background.png');
+    background-size: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.store h1 {
+    font-size: 39px;
+    margin-bottom: 0px;
+}
+
+.store h2 {
+    font-size: 22.42px;
+}
+
+.food {
+    margin: 0px 46px 0px 46px;
+    padding: 67px 0px 51px 0px;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.emoji p{
+    font-size: 79px;
+    margin: 0;
+}
+.info {
+    margin-left: 31px;
+    flex-grow: 1;
+}
+
+.info h2 {
+    font-size: 28px;
+    margin: 0px;
+}
+.info p {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 0px;
+}
+
+.info h3 {
+    font-size: 20px;
+}
+
+.order-btn {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8B8B8B;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Inter';
+    padding-bottom: 3px;
+}
+
+.order {
+    margin: 45px 46px 53px 46px;
+    width: 508px;
+    height: 319px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order h2 {
+    margin: 0 auto 64px;
+}
+
+.order-item-list {
+    margin-bottom: 31px;
+}
+.order-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.order-item h3 {
+   margin: 0px; 
+   font-size: 28px;
+}
+
+.order-item p {
+    flex-grow: 1;
+    margin: 0px 0px 0px 13px;
+    font-size: 12px;
+    color: #8B8B8B;
+}
+
+.order-item h4 {
+    margin: 0px; 
+    font-size: 24px;
+}
+
+.order-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 0px;
+    margin: 0;
+    border-top: 2px solid black;
+}
+
+.order-total h3 {
+    font-size: 28px;
+    margin: 0;
+}
+.order-total h4 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#complete-order {
+    margin-top: 53px;
+}
+
+.green-btn {
+    background-color: #16DB99;
+    border-radius: 3px;
+    border: none;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 0;
+}
+
+.result {
+    background-color: #ECFDF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result p {
+    font-size: 32px;
+    color: #065F46;
+    margin: 50px auto;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 524px;
+    display: none;
+    flex-direction: column;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 255px 0px  #00000080;
+    background-color: white;
+    padding: 47px 24px 30px 24px;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-title {
+    display: flex;
+    flex-direction: row;
+}
+
+#modal h1 {
+    margin: 0 auto 46px;
+    justify-content: center;
+}
+
+.modal-input {
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 16px 26px;
+    margin-bottom: 23px;
+}
+
+#complete-pay {
+    margin-top: 50px;
+}
