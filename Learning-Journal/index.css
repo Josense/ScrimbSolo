@@ -1,0 +1,120 @@
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    border: 1px solid #FF0000;
+    gap: 1fr;
+    justify-content: space-between;
+    padding: 1.5em 2.21em;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    padding-left: 0.25em;
+    color: #0E0E0E;
+}
+
+.title img {
+    width: 2.14rem;
+    height: 2.14rem;
+}
+
+.nav {
+    display: flex;
+}
+.nav button {
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 6.5em;
+    text-align: end;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    color: #090909;
+}
+
+
+main {
+    border: 1px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+}
+.post-main {
+    position: relative;
+    width: 100%;
+}
+
+.post-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-main .post-main-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    max-width: 657px;
+    padding: 2.21em;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3.3125em 3.3125em 1.9375em;
+    gap: 1.625em;
+}
+.post-grid-item img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.post-grid-item .post-time{
+    color: #000000;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.post-grid-item .post-title{
+    color: #141414;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.post-grid-item .post-description{
+    color: #505050;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+footer {
+    background-color: #202020;
+    color: #ECECEC;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    padding: 3.08em 0;
+}
+
