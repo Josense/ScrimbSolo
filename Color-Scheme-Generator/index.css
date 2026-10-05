@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.75em;
+    padding: 1.5em 0.875em;
+}
+
+input {
+    flex: 1;
+    height: 2.5rem;
+    border: none;
+}
+
+select {
+    flex: 7;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5em;
+
+    /* 1. 移除浏览器默认的下拉箭头样式 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* 2. 添加自定义的背景箭头图标，并设置右侧定位和不重复 */
+    background-image: url('images/Icon.png');
+    background-repeat: no-repeat;
+    /* 关键：通过 100% 减去具体的像素值（如 15px）来控制右边距 */
+    background-position: right 15px center; 
+
+    /* 3. 设置右侧内边距，防止文字和自定义箭头重叠 */
+    padding-right: 35px; 
+    padding-left: 10px;
+}
+
+
+#header button {
+    flex: 2;
+    background: none;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.25em;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+#scheme {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#scheme > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.scheme-item-bg {
+    flex: 1;
+}
+
+.scheme-item-hex {
+    font-size: 0.75rem;
+    line-height: 2em;
+    font-weight: 500;
+    margin: 1em auto;
+}
+
+/* Toast 弹窗样式 */
+.custom-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    font-size: 0.875rem;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
